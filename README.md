@@ -1,73 +1,149 @@
-# React + TypeScript + Vite
+# Jose Recipes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Recipe Finder application built with **React, TypeScript, Redux Toolkit, RTK Query, React Router, and Tailwind CSS.
 
-Currently, two official plugins are available:
+Discover delicious recipes, browse categories, search meals instantly, view detailed cooking instructions, and save your favorite recipes with persistent storage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Layout Content
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Home Page
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* Hero Section
+* Recipe Categories
+* Search Functionality
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Recipe Details
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* Ingredients List
+* Cooking Instructions
+* YouTube Tutorial
+* Category & Cuisine Information
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Favouites
+
+* Add/Remove Favourite Recipes
+* Persistent Favourites using Local Storage
+
+---
+
+## Features
+
+### Recipe Search
+
+Search recipes instantly with a debounced search experience.
+
+### Recipe Categories
+
+Browse meals by category:
+
+* Beef
+* Chicken
+* Dessert
+* Lamb
+* Pasta
+* Seafood
+* Vegetarian
+* Vegan etc.,
+
+### Recipe Details
+
+View detailed information including:
+
+* Ingredients
+* Measurements
+* Cooking Instructions
+* Cuisine Type
+* Category
+* YouTube Tutorial
+
+### Favourites System
+
+Save recipes to favourites and access them anytime.
+
+Features:
+
+* Add Favorite
+* Remove Favorite
+* Persistent Storage using LocalStorage
+
+### RTK Query
+
+* API Fetching
+* Caching
+* Loading States
+* Error Handling
+* Optimized Requests
+
+### Skeleton Loaders
+
+Beautiful loading placeholders for:
+
+* Categories
+* Recipe Cards
+* Detail Pages
+
+### Responsive Design
+
+Fully responsive across:
+
+* Mobile
+* Tablet
+* Desktop
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* React Router DOM
+* Tailwind CSS
+
+### State Management
+
+* Redux Toolkit
+* RTK Query
+* React Redux
+
+### Icons
+
+* Lucide React
+
+### API
+
+* TheMealDB API
+
+---
+
+## Concepts Practiced
+
+This project demonstrates:
+
+* Redux Toolkit
+* RTK Query
+* TypeScript Interfaces
+* Dynamic Routing
+* Route Parameters
+* Global State Management
+* Local Storage Persistence
+* Search Debouncing
+* Skeleton Loading UI
+* Responsive Design
+* Component Reusability
+
+---
+
+## Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
