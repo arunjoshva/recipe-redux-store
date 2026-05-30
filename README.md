@@ -8,7 +8,7 @@ Discover delicious recipes, browse categories, search meals instantly, view deta
 
 ## Live Demo
 
-
+https://recipes-redux-skill.netlify.app/
 
 ---
 
