@@ -1,6 +1,6 @@
 # Jose Recipes
 
-A modern Recipe Finder application built with **React, TypeScript, Redux Toolkit, RTK Query, React Router, and Tailwind CSS.
+A modern Recipe Finder application built with **React, TypeScript, Redux Toolkit, RTK Query, React Router, and Tailwind CSS**.
 
 Discover delicious recipes, browse categories, search meals instantly, view detailed cooking instructions, and save your favorite recipes with persistent storage.
 
